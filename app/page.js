@@ -24,7 +24,7 @@ export default function Home() {
         <Skills/>
       </div>
       <div className="mb-20  text-center"> 
-      <div className="mb-10 w-[500px] mx-auto">
+      <div className="mb-10 px-5 sm:px-0 sm:w-[500px] mx-auto">
       <h1 className='text-4xl'>My Projects</h1>
       <p className='text-2xl mb-3'>Check out my latest works</p>
       <p className="text-gray-300 text-lg">I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
