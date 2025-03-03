@@ -27,7 +27,7 @@ export default function Home() {
       <div className="mb-10 px-5 sm:px-0 sm:w-[500px] mx-auto">
       <h1 className='text-4xl'>My Projects</h1>
       <p className='text-2xl mb-3'>Check out my latest works</p>
-      <p className="text-gray-300 text-lg">I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
+      <p className="text-gray-300 text-lg">I have worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
       </div>
      
       <Projects/>
