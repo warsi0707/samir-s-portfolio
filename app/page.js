@@ -9,16 +9,14 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="max-w-[900px] mx-auto">
-      <Navbar/>
+    <>
+
+    <div className="">
+    {/* <Navbar/> */}
       <Greet/>
       <About/>
-      
-      <div className="mb-20">
-        <h1 className='text-3xl mb-5 px-5 md:px-0 text-start'>Education</h1>
-        <Education link={"https://gimgs2.nohat.cc/thumb/f/640/aktu-logo-dr-a-p-j-abdul-kalam-technical-university--m2i8d3H7b1m2d3N4.jpg"} university={"Abdul kalam Technical University"} degree={"B-Tech"} year={"2021-2024"}/>
-        <Education link={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw6IM0yR1F4hqDLjR_stGXLU5HhNpc4bL00Q&s"} university={"Integral Univeristy"} degree={"Diploma"} year={"2019-2021"}/>
-      </div>
+      <Education />
+
       <div className="mb-20">
         <h1 className='text-3xl mb-5 px-5 md:px-0 text-start'>Skills</h1>
         <Skills/>
@@ -36,5 +34,6 @@ export default function Home() {
      
   
     </div>
+    </>
   );
 }
