@@ -1,31 +1,43 @@
-import React from 'react'
-import CardTech from './CardTech'
-import ButtonLink from './ButtonLink'
-import Link from 'next/link'
-import { CiGlobe } from "react-icons/ci";
-export default function Card({image, title, about, link,react, express,mongoDB,tailwind}) {
+"use client";
+import React from "react";
+import Link from "next/link";
+import Skill from "./skill";
+import { motion } from "framer-motion";
+export default function Card({
+  title,
+  about,
+  links,
+  image,
+  react,
+  express,
+  mongodb,
+  tailwind,
+}) {
   return (
-    <div className='w-96 rounded-2xl  border border-gray-500 p-5'>
-        <div>
-            <img className='w-full h-40' src={image} alt="" />
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="flex flex-col gap-5 items-center sm:items-center md:gap-24 md:flex-row py-5"
+    >
+      <Link href={`${links}`}>
+        <img
+          className=" w-full md:w-64 h-48 rounded-md ransition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600"
+          src={`${image}`}
+          alt=""
+        />
+      </Link>
+      <div className="flex flex-col  justify-start md:gap-5">
+        <h1 className="text-xl font-semibold">{title}</h1>
+        <p className="text-gray-400">{about}</p>
+        <div className="flex flex-wrap items-start gap-5">
+          {react && <Skill skill={"React"} />}
+          {tailwind && <Skill skill={"Tailwind"} />}
+          {express && <Skill skill={"Express"} />}
+          {mongodb && <Skill skill={"MongoDB"} />}
         </div>
-        <div className='mt-10 mb-3'>
-            <h1 className='text-2xl text-center mb-2'>{title}</h1>
-            <p className='text-gray-300 text-center'>{about}</p>
-        </div>
-        <div className='flex flex-wrap gap-1 space-y-1 mb-5'>
-        {react && <p className='bg-gray-800 text-center px-3 py-0.5 rounded-xl'>{react}</p>}
-        {express &&  <p className='bg-gray-800 text-center px-3 py-0.5 rounded-xl'>{express}</p> }
-        {mongoDB &&  <p className='bg-gray-800 text-center px-3 py-0.5 rounded-xl'>{mongoDB}</p> }
-        {tailwind &&  <p className='bg-gray-800 text-center px-3 py-0.5 rounded-xl'>{tailwind}</p> }
-       
-        
-        </div>
-        <div className='flex justify-center'>
-        <Link href={`${link}`} className='px-7 py-2 border border-gray-800 rounded-xl flex gap-2 justify-center hover:border-gray-500 transition-all duration-300'> <p className='text-xl mt-0.5'><CiGlobe/></p> <p>Website</p></Link>
-        </div>
-      
-
-    </div>
-  )
+      </div>
+    </motion.div>
+  );
 }
