@@ -19,8 +19,11 @@ export default function Education() {
           >
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-5">
               <div className="flex justify-center sm:justify-start">
-                <img
-                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover"
+                <motion.img
+                whileHover={{scale:0.8}}
+                whileTap={{scale:1.2}}
+                transition={{duration:0.3}}
+                  className="w-24 h-24 md:h-20 md:w-20  rounded-full object-cover cursor-pointer"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVU2aCVnu3rCRvKtL1LWauCHcX1oK6wUmfgw&s"
                   alt=""
                 />
@@ -45,8 +48,11 @@ export default function Education() {
           >
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-5">
               <div className="flex justify-center sm:justify-start">
-                <img
-                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover"
+                <motion.img
+                whileHover={{scale:0.8}}
+                whileTap={{scale:1.2}}
+                transition={{duration:0.3}}
+                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover cursor-pointer"
                   src="https://gimgs2.nohat.cc/thumb/f/640/aktu-logo-dr-a-p-j-abdul-kalam-technical-university--m2i8d3H7b1m2d3N4.jpg"
                   alt=""
                 />
@@ -71,8 +77,11 @@ export default function Education() {
           >
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-5">
               <div className="flex justify-center sm:justify-start">
-                <img
-                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover"
+                <motion.img 
+                whileHover={{scale:0.8}}
+                whileTap={{scale:1.2}}
+                transition={{duration:0.3}}
+                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover cursor-pointer" 
                   src="https://upload.wikimedia.org/wikipedia/en/8/86/Integral_University%2C_Lucknow_logo.png"
                   alt=""
                 />
