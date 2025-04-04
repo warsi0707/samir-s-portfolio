@@ -15,8 +15,8 @@ export default function Technology() {
   return (
     <>
        <motion.div 
-        initial= {{opacity:0, y:-50}}
-        whileInView={{opacity:1, y:0}}
+        initial= {{opacity:0, y:0}}
+        whileInView={{opacity:1, y:-50}}
         transition={{duration:1}}
         id='tech' 
         className='max-w-[900px] sm:mx-auto h-[60vh]  flex flex-col mx-10 mt-20'>

@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Skill from "./skill";
 import { motion } from "framer-motion";
+
 export default function Card({
   title,
   about,

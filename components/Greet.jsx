@@ -3,13 +3,13 @@ import React from 'react'
 import { motion } from 'framer-motion'
 export default function Greet() {
   return (
-    <div className='flex px-16 md:px-32 pt-40 w-full items-center justify-center py-28 mx-auto '>
+    <div className='flex px-16 md:px-32 pt-40 w-full items-center justify-center py-28 mx-auto h-[100vh]'>
         <motion.div
         initial={{ y:-50, opacity:0}}
         animate={{y:0, opacity:1}}
         transition={{duration: 0.8,delay:0.2}}
         className='flex flex-col shadow-2xl sm:px-16  sm:flex-row md:flex-col space-y-5 '>
-           <img className='w-[300px] h-[300px] cursor-pointer mx-auto rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 object-fill' src="/samir2.jpg" alt="" />
+           {/* <img className='w-[300px] h-[300px] cursor-pointer mx-auto rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 object-fill' src="/samir2.jpg" alt="" /> */}
            <motion.div 
             initial={{ y:80, opacity:0}}
             animate={{y:0, opacity:1}}
