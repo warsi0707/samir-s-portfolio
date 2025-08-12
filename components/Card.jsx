@@ -13,7 +13,11 @@ export default function Card({
   express,
   mongoDB,
   tailwind,
-  jwt
+  jwt,
+  Nextjs,
+  PostgreSql, 
+  Prisma,
+  Motion
 }) {
   return (
     <motion.div
@@ -21,16 +25,16 @@ export default function Card({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="flex flex-col justify-center items-center gap-5 sm:items-center md:gap-24 md:flex-row py-5"
+      className="flex flex-col items-center justify-center gap-5 py-5 sm:items-center md:gap-24 md:flex-row"
     >
       <Link href={`${links}`}>
         <img
-          className=" px-2 md:w-64 h-48 mx-auto w-full ransition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600"
+          className="w-full h-48 px-2 mx-auto duration-300 md:w-64 ransition-all hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600"
           src={`${image}`}
           alt=""
         />
       </Link>
-      <div className="flex flex-col w-full  px-5 sm:px-0 sm:w-1/2 justify-center md:gap-5">
+      <div className="flex flex-col justify-center w-full px-5 sm:px-0 sm:w-1/2 md:gap-5">
         <h1 className="text-xl font-semibold">{title}</h1>
         <p className="text-gray-400">{about}</p>
         <div className="flex flex-wrap items-start gap-5">
@@ -38,7 +42,10 @@ export default function Card({
           {tailwind && <Skill skill={tailwind} />}
           {express && <Skill skill={express} />}
           {mongoDB && <Skill skill={mongoDB} />}
-          {jwt && <Skill skill={jwt} />}
+          {Nextjs && <Skill skill={Nextjs} />}
+          {PostgreSql && <Skill skill={PostgreSql} />}
+          {Prisma && <Skill skill={Prisma} />}
+          {Motion && <Skill skill={Motion} />}
         </div>
       </div>
     </motion.div>
