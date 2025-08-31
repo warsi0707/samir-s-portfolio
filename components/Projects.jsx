@@ -8,6 +8,19 @@ export default function Projects() {
         Projects
       </h1>
       <div className="flex flex-col gap-10 justify-center  max-w-[900px] mx-auto ">
+         <Card
+          title={"Homie"}
+          image={"/homie.png"}
+          about={
+            "A fullstack nextjs real estate management app where user, admin and agent will signin using email, google and github. Agent manage the listing and inquiry and also user can contact the agent for query"
+          }
+          Nextjs={"Nextjs"}
+          tailwind={"Tailwind"}
+          PostgreSql={"PostgreSql"}
+          Prisma={"Prisma"}
+          Motion={"Motion"}
+          links={"https://homie-xi.vercel.app"}
+        />
         <Card
           title={"Rent A Car"}
           image={"/carrent.png"}
