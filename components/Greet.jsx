@@ -23,7 +23,7 @@ export default function Greet() {
            <h3 className='bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent opacity-80 text-xl md:text-3xl font-light' >Web Developer</h3>
            <p className='md:text-base text-pretty text-sm text-gray-400'>Software developer with passion for building impactful web solution. Always learning, always creating</p>
             <div className="flex flex-col lg:flex-row items-center gap-3 justify-between">
-              <Link href={"/https://github.com/warsi0707"} className="p-3 bg-slate-300 text-black rounded-full text-3xl"><FaGithub/></Link>
+              <Link href={"https://github.com/warsi0707"} className="p-3 bg-slate-300 text-black rounded-full text-3xl"><FaGithub/></Link>
               <Link href={"/#Contact"} className="flex items-center bg-slate-900 p-3 text-xl rounded-full ">
                 <p>Contact me here</p>
                 <p><IoIosArrowRoundForward/></p>
@@ -32,7 +32,7 @@ export default function Greet() {
                 <p>Download CV</p>
                 <p><IoIosArrowRoundForward/></p>
               </Link>
-              <Link href={"/https://www.linkedin.com/in/samir-warsi"} className="p-3 bg-slate-300 text-black rounded-full text-3xl"><CiLinkedin/></Link>
+              <Link href={"https://www.linkedin.com/in/samir-warsi"} className="p-3 bg-slate-300 text-black rounded-full text-3xl"><CiLinkedin/></Link>
             </div>
 
            </motion.div>
