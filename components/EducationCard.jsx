@@ -1,6 +1,8 @@
+'use client'
 import { motion } from "framer-motion";
+import { memo } from "react";
 
-export default function EducationCard({ name, organ, from, to, logo }) {
+function EducationCard({ name, organ, from, to, logo }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -31,3 +33,6 @@ export default function EducationCard({ name, organ, from, to, logo }) {
     </motion.div>
   );
 }
+
+
+export default memo(EducationCard)

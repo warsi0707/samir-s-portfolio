@@ -1,12 +1,9 @@
-"use client";
-import { motion } from "framer-motion";
-import React from "react";
 import EducationCard from "./EducationCard";
 
 export default function Education() {
   return (
     <>
-      <div className="mb-10 px-5 md:px-0 max-w-[900px] mx-auto min-h-[80vh] flex flex-col gap-16">
+      <div id="Education" className="mb-10 px-5 md:px-0 max-w-[900px] pt-32 mx-auto min-h-[80vh] flex flex-col gap-16">
         <h1 className="flex justify-center text-4xl font-light text-white md:text-6xl">
           Education
         </h1>

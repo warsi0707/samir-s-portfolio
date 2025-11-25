@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
+
 import Card from "./Card";
+
 export default function Projects() {
   return (
-    <div id="project">
+    <div id="Projects">
       <h1 className="flex justify-center mb-10 text-4xl font-light text-white md:text-6xl">
         Projects
       </h1>
