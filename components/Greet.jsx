@@ -28,7 +28,7 @@ export default function Greet() {
                 <p>Contact me here</p>
                 <p><IoIosArrowRoundForward/></p>
               </Link>
-              <Link href={"https://drive.google.com/file/d/19fbR2RlQCN4mxLTQd6VzLyQE6drw-8Ks/view?usp=sharing"} className="flex items-center bg-slate-300 text-black p-3 text-xl rounded-full ">
+              <Link href={"https://drive.google.com/file/d/1mg2Je1DB2okmWLG00I1zWjNQVzJbZS7S/view?usp=sharing"} className="flex items-center bg-slate-300 text-black p-3 text-xl rounded-full ">
                 <p>Download CV</p>
                 <p><IoIosArrowRoundForward/></p>
               </Link>
