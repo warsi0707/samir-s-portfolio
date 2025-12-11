@@ -5,7 +5,7 @@ export const projects= [
       about: "A full-stack, role-based e-commerce platform built using Node.js, Express, MongoDB, React.js, Redux Toolkit, Tailwind CSS, JWT, Multer, and Zod. The system supports three roles—User, Seller, and Admin—each with dedicated access and functionality.",
       tech: ["React.js", "React-Router", "Redux-Toolkit", "Tailwind CSS", "ZOD", "Node.js", "Express.js", "MongoDB", "Multer", "JWT", "Bcrypt"],
       github: "https://github.com/warsi0707/E-CART",
-      links: "https://e-cart-frotend-app.onrender.com"
+      links: "https://e-cart-frontend-nmaj.onrender.com"
     },
     {
       title: "Homie",
