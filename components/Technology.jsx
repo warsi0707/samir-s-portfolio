@@ -11,6 +11,10 @@ import { RiNextjsFill } from "react-icons/ri";
 import { motion } from 'framer-motion';
 import { SiRedux } from "react-icons/si";
 import TechCard from './TechCard';
+import { SiTypescript } from "react-icons/si";
+import { FaNode } from "react-icons/fa6";
+
+
 
 
 export default function Technology() {
@@ -25,13 +29,15 @@ export default function Technology() {
         <h1 className='text-4xl font-light text-white md:text-6xl flex justify-center'>Technologies</h1>
           <div className='flex flex-wrap gap-5 mx-auto justify-between mt-10'>
             <TechCard label={"Javascript"} icon={<FaJs/>}/>
+            <TechCard label={"TypeScript"} icon={<SiTypescript/>}/>
+            <TechCard label={"Node"} icon={<FaNode/>}/>
             <TechCard label={"Tailwind"} icon={<RiTailwindCssFill/>}/>
             <TechCard label={"React"} icon={<FaReact/>}/>
             <TechCard label={"Redux-Toolkit"} icon={<SiRedux/>}/>
             <TechCard label={"Next.js"} icon={<RiNextjsFill/>}/>
             <TechCard label={"Express.js"} icon={<SiExpress/>}/>
             <TechCard label={"MongoDB"} icon={<DiMongodb/>}/>
-            <TechCard label={"Prisma"} icon={<SiPrisma/>}/>
+            {/* <TechCard label={"Prisma"} icon={<SiPrisma/>}/> */}
             <TechCard label={"JWT"} icon={<SiJsonwebtokens/>}/>
           </div>
         </motion.div>

@@ -32,12 +32,12 @@ export const projects= [
       github: "https://github.com/warsi0707/AirBNB"
     },
     {
-      title: "Brainly",
+      title: "Brainly (Second-Brain)",
       image: "/brainly.png",
       about: "A second-brain application to store your daily links like tweets, YouTube videos, and text notes you want to remember.",
-      tech: ["React.js", "Tailwind", "Node.js", "Express", "MongoDB"],
-      links: "https://brainly-0ui5.onrender.com",
-      github: "https://github.com/warsi0707/Brainly"
+      tech: ["Node","TypeScript", "React","Redux-toolkit", "Tailwind", "Express", "MongoDB"],
+      links: "https://second-brain-frontend-evno.onrender.com",
+      github: "https://github.com/warsi0707/SECOND-BRAIN"
     }
   ]
 

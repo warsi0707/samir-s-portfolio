@@ -13,7 +13,7 @@ export default function About() {
       <h1 className='text-4xl font-light text-white md:text-6xl'>About Me</h1>
       <div className='space-y-2 text-center sm:text-start font-light sm:text-lg text-gray-400'>
         <p>I'm a passionate developer with a BTech in Engineering, eager to launch my career as a <strong className='text-white'>Frontend, React, or Fullstack Developer</strong>. </p>
-        <p>Proficient in <strong className='text-white'>HTML, CSS, JavaScript, React, Redux-Toolkit, Next.js, Tailwind, Node, Express, MongoDB, PostgreSQL, Prisma, NextAuth, JWT, and cookies, </strong>  I build modern, scalable web apps.</p>
+        <p>Proficient in <strong className='text-white'>HTML, CSS, JavaScript, TypeScript, React, Redux-Toolkit, Next.js, Tailwind, Node, Express, MongoDB, PostgreSQL, Prisma, NextAuth, JWT, and cookies, </strong>  I build modern, scalable web apps.</p>
         <p>My projects include an <strong className='text-white'>Homie, Airbnb Clone , Real Estate Management System , Brainly-inspired, and a Course Selling App</strong>. I combine clean code with user-centric design to solve real-world problems.</p>
       </div>
     </motion.div>
